@@ -9,40 +9,40 @@
 </div>
 
 <div *ngIf="user">
-    <div class="panel panel-default">
-        <div class="panel-heading">
-            <h3 class="panel-title">{{user.name}}</h3>
+    <div class="card">
+        <div class="card-header">
+            <h3 class="card-title">{{user.name}}</h3>
         </div>
-        <div class="panel-body">
+        <div class="card-block">
             <div class="row">
                 <div class="col-md-3">
                     <img class="img-thumbnail github-avatar" src="{{user.avatar_url}}">
                 </div>
                 <div class="col-md-9">
                     <div class="stats">
-                    <span class="label label-default">{{user.public_repos}} Public Repos</span>
-                    <span class="label label-primary">{{user.public_gists}} Public Gists</span>
-                    <span class="label label-success">{{user.followers}} Followers</span>
-                    <span class="label label-info">{{user.following}} Following</span>
+                        <span class="tag tag-default">{{user.public_repos}} Public Repos</span>
+                        <span class="tag tag-primary">{{user.public_gists}} Public Gists</span>
+                        <span class="tag tag-success">{{user.followers}} Followers</span>
+                        <span class="tag tag-info">{{user.following}} Following</span>
                     </div>
                     <br>
                     <ul class="list-group">
                         <li class="list-group-item"><strong>Username: </strong>{{user.login}}</li> 
-                         <li class="list-group-item"><strong>Location: </strong>{{user.location}}</li>
-                          <li class="list-group-item"><strong>Email: </strong>{{user.email}}</li>
-                           <li class="list-group-item"><strong>Blog: </strong>{{user.blog}}</li> 
-                            <li class="list-group-item"><strong>Member Since: </strong>{{user.created_at}}</li>  
+                            <li class="list-group-item"><strong>Location: </strong>{{user.location}}</li>
+                        <li class="list-group-item"><strong>Email: </strong>{{user.email}}</li>
+                        <li class="list-group-item"><strong>Blog: </strong>{{user.blog}}</li> 
+                        <li class="list-group-item"><strong>Member Since: </strong>{{user.created_at}}</li>  
                     </ul>
                 </div>    
             </div>
         </div>
     </div>
     
-    <div class="panel panel-default">
-        <div class="panel-heading">
-            <h3 class="panel-title">Repos</h3>
+    <div class="card">
+        <div class="card-header">
+            <h3 class="card-title">Repos</h3>
         </div>
-        <div class="panel-body">
+        <div class="card-block">
             <div class="row">
                 <div class="col-md-12">
                     <div *ngFor="let repo of repos">
@@ -52,8 +52,8 @@
                                 <p>{{repo.description}}</p>
                             </div>
                             <div class="col-md-3">
-                                <span class="label label-default">{{repo.watchers}} Watchers</span>
-                                <span class="label label-primary">{{repo.forks}} Forks</span>
+                                <span class="tag tag-default">{{repo.watchers}} Watchers</span>
+                                <span class="tag tag-primary">{{repo.forks}} Forks</span>
                             </div>    
                         </div> 
                         <hr />  
