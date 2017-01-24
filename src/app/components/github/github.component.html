@@ -2,7 +2,7 @@
     <div class="col-md-12">
         <form>
             <div class="form-group">
-                <input type="text" class="form-control" placeholder="Github Username" [(ngModel)]="username" name="username" (keyup)="search()">    
+                <input type="text" class="form-control" placeholder="Informe o nome do usuário" [(ngModel)]="username" name="username" (keyup)="search()">    
             </div>    
         </form>    
     </div>    
@@ -21,18 +21,18 @@
                 </div>
                 <div class="col-md-9">
                     <div class="stats">
-                        <span class="tag tag-default">{{user.public_repos}} Public Repos</span>
-                        <span class="tag tag-primary">{{user.public_gists}} Public Gists</span>
-                        <span class="tag tag-success">{{user.followers}} Followers</span>
-                        <span class="tag tag-info">{{user.following}} Following</span>
+                        <span class="tag tag-default">{{user.public_repos}} Repositórios públicos</span>
+                        <span class="tag tag-primary">{{user.public_gists}} Gists públicos</span>
+                        <span class="tag tag-success">{{user.followers}} Seguidores</span>
+                        <span class="tag tag-info">{{user.following}} Seguindo</span>
                     </div>
                     <br>
                     <ul class="list-group">
-                        <li class="list-group-item"><strong>Username: </strong>{{user.login}}</li> 
-                        <li class="list-group-item"><strong>Location: </strong>{{user.location}}</li>
+                        <li class="list-group-item"><strong>Usuário: </strong>{{user.login}}</li> 
+                        <li class="list-group-item"><strong>Local: </strong>{{user.location}}</li>
                         <li class="list-group-item"><strong>Email: </strong>{{user.email}}</li>
                         <li class="list-group-item"><strong>Blog: </strong>{{user.blog}}</li> 
-                        <li class="list-group-item"><strong>Member Since: </strong>{{user.created_at}}</li>  
+                        <li class="list-group-item"><strong>Membro desde: </strong>{{user.created_at}}</li>  
                     </ul>
                 </div>    
             </div>
@@ -41,7 +41,7 @@
     
     <div class="card">
         <div class="card-header">
-            <h3 class="card-title">Repos</h3>
+            <h3 class="card-title">Repositórios</h3>
         </div>
         <div class="card-block">
             <div class="row">
